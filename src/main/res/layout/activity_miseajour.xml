@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fr.cned.emdsgil.suividevosfrais.synchroniser">
+    tools:context="fr.cned.emdsgil.suividevosfrais.miseajour">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
         android:weightSum="1"
-        tools:context=".synchroniser">
+        tools:context=".miseajour">
 
 
         <LinearLayout
@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:baselineAligned="false"
-            android:orientation="horizontal"
             android:padding="5dp"
             android:weightSum="1">
 
@@ -35,12 +34,12 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imgSynchroniserReturn"
+                    android:id="@+id/imgMiseajourReturn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="end"
                     android:layout_weight="1"
-                    android:contentDescription="@string/icon_synch"
+                    android:contentDescription="@string/icon_miseajour"
                     android:rotation="180"
                     android:src="@drawable/transfert" />
             </LinearLayout>
@@ -50,30 +49,51 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/txtTitleSynchroniser"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
-                    android:gravity="start|center"
-                    android:lines="1"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:text="@string/title_synch"
-                    android:textColor="@color/colorPrimary" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleMiseajour"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:baselineAligned="false"
+                        android:gravity="bottom|start"
+                        android:lines="1"
+                        android:text="Consulter la base"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:text="de données"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+                </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_weight="0"
-            android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,7 +133,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="40dp"
             android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
@@ -153,9 +173,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/datHfRecap2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -62,7 +62,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:text="@string/title_frais_nuite"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/colorPrimary" />
 
             </LinearLayout>
 
