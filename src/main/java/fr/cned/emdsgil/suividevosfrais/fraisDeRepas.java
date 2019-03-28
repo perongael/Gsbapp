@@ -29,6 +29,7 @@ public class fraisDeRepas extends AppCompatActivity {
         setTitle("GSB : Frais de repas");
         // modification de l'affichage du DatePicker
         Global.changeAfficheDate((DatePicker) findViewById(R.id.datFraisDeRepas), false) ;
+        Global.contextOuAfficherToast = fraisDeRepas.this;
         // valorisation des propriétés
         valoriseProprietes() ;
         // chargement des méthodes événementielles

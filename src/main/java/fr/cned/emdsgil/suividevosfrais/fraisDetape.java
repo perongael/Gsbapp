@@ -29,6 +29,7 @@ public class fraisDetape extends AppCompatActivity {
         setTitle("GSB : Frais d'étapes");
         // modification de l'affichage du DatePicker
         Global.changeAfficheDate((DatePicker) findViewById(R.id.datFraisDetape), false) ;
+        Global.contextOuAfficherToast = fraisDetape.this;
         // valorisation des propriétés
         valoriseProprietes() ;
         // chargement des méthodes événementielles

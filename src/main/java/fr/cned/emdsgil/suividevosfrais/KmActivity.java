@@ -25,6 +25,7 @@ public class KmActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Global.contextOuAfficherToast = KmActivity.this;
 		setContentView(R.layout.activity_km);
         setTitle("GSB : Frais Km");
 		// modification de l'affichage du DatePicker

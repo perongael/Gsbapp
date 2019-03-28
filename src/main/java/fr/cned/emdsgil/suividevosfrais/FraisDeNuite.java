@@ -29,6 +29,7 @@ public class FraisDeNuite extends AppCompatActivity {
         setTitle("GSB : Frais de nuitées");
         // modification de l'affichage du DatePicker
         Global.changeAfficheDate((DatePicker) findViewById(R.id.datFraisDeNuite), false) ;
+        Global.contextOuAfficherToast = FraisDeNuite.this;
         // valorisation des propriétés
         valoriseProprietes() ;
         // chargement des méthodes événementielles

@@ -1,10 +1,15 @@
 package fr.cned.emdsgil.suividevosfrais;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,6 +17,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Field;
 import java.util.Hashtable;
+import java.util.Locale;
 
 abstract class Global {
 
@@ -29,6 +35,11 @@ abstract class Global {
 
     public static Context contextMainActivity;
     public static Context contextSynchroniser;
+    public static Context contextOuAfficherToast;
+
+
+
+
 
     /**
      * Modification de l'affichage de la date (juste le mois et l'année, sans le jour)
@@ -53,4 +64,9 @@ abstract class Global {
         }
     }
 
+    public static void toast(String $textAAfficher){
+        Toast toast= Toast.makeText(contextOuAfficherToast,$textAAfficher, Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
+    }
 }

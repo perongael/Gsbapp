@@ -21,6 +21,7 @@ public class HfRecapActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hf_recap);
+		Global.contextOuAfficherToast = HfRecapActivity.this;
         setTitle("GSB : Récap Frais HF");
 		// modification de l'affichage du DatePicker
 		Global.changeAfficheDate((DatePicker) findViewById(R.id.datHfRecap), false) ;

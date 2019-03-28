@@ -21,13 +21,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("GSB : Suivi des frais");
         Global.contextMainActivity = MainActivity.this;
+        Global.contextOuAfficherToast = MainActivity.this;
         // récupération des informations sérialisées
         recupSerialize();
-        Log.d("myTag", "This is my message");
-
-
-
-
         // chargement des méthodes événementielles
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdKm)), KmActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdRepas)), fraisDeRepas.class);
@@ -36,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdHf)), HfActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdHfRecap)), HfRecapActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdTransfert)), synchroniser.class);
-        cmdMenu_clic(((ImageButton) findViewById(R.id.cmdhistorique)), historique.class);
-        //cmdTransfert_clic();
-
     }
 
     @Override
@@ -90,20 +83,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
-
-    /**
-     * Cas particulier du bouton pour le transfert d'informations vers le serveur
-
-    private void cmdTransfert_clic() {
-        findViewById(R.id.cmdTransfert).setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View v) {
-                // envoi les informations sérialisées vers le serveur
-                // en construction
-            }
-        });
-    }*/
 }
