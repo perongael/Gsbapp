@@ -6,10 +6,12 @@
     <string name="icon_frais_hf">Icone pour les frais hors forfait</string>
     <string name="icon_recap_frais_hf">Icone pour le récapitulatif des frais hors forfait</string>
     <string name="icon_frais_km">Icone pour les frais kilométriques</string>
+    <string name="icon_historique">Icone pour l historique du mois</string>
     <string name="icon_synch">Icone pour la synchronisation</string>
     <string name="euro">€</string>
     <string name="ajouter">Ajouter</string>
     <string name="km">Km</string>
+    <string name="histokm">Nombre de Kilometre</string>
     <string name="fraisDeRepas">repas</string>
     <string name="fraisDeNuite">nuitées</string>
     <string name="fraisDetape">étapes</string>
@@ -24,6 +26,7 @@
     <string name="title_frais_detape">Frais d étapes</string>
     <string name="title_frais_hf">Frais hors forfait</string>
     <string name="title_synch">Synchroniser</string>
+    <string name="title_historique">Frais enregistrés</string>
     <string name="motif">Motif :</string>
     <string name="identifiant">Identifiant :</string>
     <string name="motdepasse">Mot de Passe :</string>
@@ -36,4 +39,5 @@
     <string name="icone_recap_hf">Icone du récapitulatif des frais hors forfait</string>
     <string name="icone_transfert">Icone de la commande de transfert</string>
     <string name="icone_supp_hf">Icône de suppression d\'une ligne de frais</string>
+
 </resources>
