@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.ImageView;
@@ -66,9 +67,13 @@ public class HfRecapActivity extends AppCompatActivity {
 			// insertion dans la listview
 		}
 		ListView listView = (ListView) findViewById(R.id.lstHfRecap);
-		FraisHfAdapter adapter = new FraisHfAdapter(HfRecapActivity.this, liste) ;
+		FraisHfAdapter adapter = new FraisHfAdapter(HfRecapActivity.this, liste, key) ;
 		listView.setAdapter(adapter) ;
 	}
+
+
+
+
 	
 	/**
 	 * Sur la selection de l'image : retour au menu principal
@@ -93,8 +98,6 @@ public class HfRecapActivity extends AppCompatActivity {
 			}
     	});       	
     }
-    
-    
 
 	/**
 	 * Retour à l'activité principale (le menu)
