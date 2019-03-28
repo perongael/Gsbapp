@@ -2,6 +2,7 @@ package fr.cned.emdsgil.suividevosfrais;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.MainThread;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -19,10 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("GSB : Suivi des frais");
+        Global.contextMainActivity = MainActivity.this;
         // récupération des informations sérialisées
         recupSerialize();
-
-
         Log.d("myTag", "This is my message");
 
 
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdHf)), HfActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdHfRecap)), HfRecapActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdTransfert)), synchroniser.class);
+        cmdMenu_clic(((ImageButton) findViewById(R.id.cmdhistorique)), historique.class);
         //cmdTransfert_clic();
 
     }

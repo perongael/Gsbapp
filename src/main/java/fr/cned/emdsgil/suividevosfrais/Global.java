@@ -1,14 +1,21 @@
 package fr.cned.emdsgil.suividevosfrais;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.lang.reflect.Field;
 import java.util.Hashtable;
 
 abstract class Global {
+
+
 
     // tableau d'informations mémorisées
     public static Hashtable<Integer, FraisMois> listFraisMois = new Hashtable<>();
@@ -19,6 +26,9 @@ abstract class Global {
 
     // fichier contenant les informations sérialisées
     public static final String filename = "save.fic";
+
+    public static Context contextMainActivity;
+    public static Context contextSynchroniser;
 
     /**
      * Modification de l'affichage de la date (juste le mois et l'année, sans le jour)

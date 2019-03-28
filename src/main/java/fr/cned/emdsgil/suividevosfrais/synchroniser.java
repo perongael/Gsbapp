@@ -1,8 +1,10 @@
 package fr.cned.emdsgil.suividevosfrais;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,6 +27,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import fr.cned.emdsgil.suividevosfrais.FraisDeNuite;
+
 import static fr.cned.emdsgil.suividevosfrais.Global.listFraisMois;
 
 public class synchroniser extends AppCompatActivity {
@@ -37,6 +41,7 @@ public class synchroniser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_synchroniser);
         setTitle("GSB : Synchronisation des frais");
+        Global.contextSynchroniser = synchroniser.this;
         imgReturn_clic() ;
         lancer_synchronisation_clic();
     }
@@ -71,25 +76,26 @@ public class synchroniser extends AppCompatActivity {
     /**
      * Retour à l'activité principale (le menu)
      */
-    private void retourActivityPrincipale() {
+    void retourActivityPrincipale() {
         Intent intent = new Intent(synchroniser.this, MainActivity.class) ;
         startActivity(intent) ;
     }
 
     private void lancer_synchronisation_clic() {
+
         findViewById(R.id.cmdsynchroniser).setOnClickListener(new Button.OnClickListener() {
+
             public void onClick(View v) {
                 // envoi les informations sérialisées vers le serveur
                 // en construction
 
                 final Gson gson = new GsonBuilder().serializeNulls().create();
 
-               String result = gson.toJson(listFraisMois);
+                String result = gson.toJson(listFraisMois);
 
                 List uneliste = new ArrayList(listFraisMois.values());
 
                 JSONObject obj = new JSONObject();
-
 
                 JsonArray lesDonnees = new Gson().toJsonTree(uneliste).getAsJsonArray();
 
@@ -99,11 +105,21 @@ public class synchroniser extends AppCompatActivity {
 
                 String lesDonneesJSON = lesDonnees.toString();
 
+                Log.d("test1", "TTTTEEEEEEEEEEEESSSSSTTTT111111");
+
                 accesDistant = new AccesDistant();
-                        accesDistant.envoi("miseajour", lesDonneesJSON, login, motdepasse);
 
+                accesDistant.envoi("synchronisation", lesDonneesJSON, login, motdepasse);
 
+                Log.d("test1", "TTTTEEEEEEEEEEEESSSSSTTTT999999");
             }
         });
+
     }
+
+
+
+
+
 }
+
