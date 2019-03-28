@@ -9,11 +9,17 @@
     <string name="euro">€</string>
     <string name="ajouter">Ajouter</string>
     <string name="km">Km</string>
+    <string name="fraisDeRepas">repas</string>
+    <string name="fraisDeNuite">nuitées</string>
+    <string name="fraisDetape">étapes</string>
     <string name="plus">+</string>
     <string name="moins">-</string>
     <string name="valider">Valider</string>
     <string name="deux_points">:</string>
     <string name="title_frais_km">Frais kilométriques</string>
+    <string name="title_frais_repas">Frais de repas</string>
+    <string name="title_frais_nuite">Frais de nuitées</string>
+    <string name="title_frais_detape">Frais d étapes</string>
     <string name="title_frais_hf">Frais hors forfait</string>
     <string name="motif">Motif :</string>
     <string name="montant">Montant :</string>
