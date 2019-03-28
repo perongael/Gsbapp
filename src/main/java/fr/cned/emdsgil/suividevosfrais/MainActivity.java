@@ -3,6 +3,7 @@ package fr.cned.emdsgil.suividevosfrais;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -20,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         setTitle("GSB : Suivi des frais");
         // récupération des informations sérialisées
         recupSerialize();
+
+
+        Log.d("myTag", "This is my message");
+
+
+
+
         // chargement des méthodes événementielles
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdKm)), KmActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdRepas)), fraisDeRepas.class);
@@ -29,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdHfRecap)), HfRecapActivity.class);
         cmdMenu_clic(((ImageButton) findViewById(R.id.cmdTransfert)), synchroniser.class);
         //cmdTransfert_clic();
+
     }
 
     @Override
@@ -80,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
 
     /**
      * Cas particulier du bouton pour le transfert d'informations vers le serveur

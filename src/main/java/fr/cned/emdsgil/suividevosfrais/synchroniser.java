@@ -100,7 +100,7 @@ public class synchroniser extends AppCompatActivity {
                 String lesDonneesJSON = lesDonnees.toString();
 
                 accesDistant = new AccesDistant();
-                        accesDistant.envoi("synchronisation", lesDonneesJSON, login, motdepasse);
+                        accesDistant.envoi("miseajour", lesDonneesJSON, login, motdepasse);
 
 
             }
