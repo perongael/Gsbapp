@@ -51,10 +51,10 @@
                 android:autoSizeTextType="uniform"
                 android:gravity="start|center"
                 android:lines="1"
-                android:paddingRight="10dp"
                 android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="@string/title_frais_km"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="@color/colorPrimary" />
 
         </LinearLayout>
 

@@ -9,8 +9,7 @@
     android:layout_alignParentTop="true"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context=".MainActivity"
-    tools:menu="@menu/main_menu">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -154,42 +153,15 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <ImageButton
+            android:id="@+id/cmdTransfert"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <ImageButton
-                android:id="@+id/cmdhistorique"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                android:src="@drawable/historique"
-                android:contentDescription="@string/icon_historique" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <ImageButton
-                android:id="@+id/cmdTransfert"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@null"
-                android:contentDescription="@string/icone_transfert"
-                android:scaleType="fitCenter"
-                android:src="@drawable/transfert" />
-        </LinearLayout>
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/icone_transfert"
+            android:scaleType="fitCenter"
+            android:src="@drawable/transfert" />
 
     </LinearLayout>
 
