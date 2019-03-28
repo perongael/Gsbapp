@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Suivi de vos frais</string>
+    <string name="retour_accueil">Accueil</string>
+    <string name="icon_frais_hf">Icone pour les frais hors forfait</string>
+    <string name="icon_recap_frais_hf">Icone pour le récapitulatif des frais hors forfait</string>
+    <string name="icon_frais_km">Icone pour les frais kilométriques</string>
+    <string name="icon_historique">Icone pour l\'historique du mois</string>
+    <string name="icon_synch">Icone pour la synchronisation</string>
+    <string name="euro">€</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="km">Km</string>
+    <string name="histokm">Nombre de Kilometre :</string>
+    <string name="historepas">Nombre de Repas :</string>
+    <string name="histonuitees">Nombre de Nuitees :</string>
+    <string name="histoetapes">Nombre d\'étapes :</string>
+    <string name="fraisDeRepas">repas</string>
+    <string name="fraisDeNuite">nuitées</string>
+    <string name="fraisDetape">étapes</string>
+    <string name="plus">+</string>
+    <string name="moins">-</string>
+    <string name="valider">Valider</string>
+    <string name="synch">Transférer mes données</string>
+    <string name="miseajour">Consulter</string>
+    <string name="deux_points">:</string>
+    <string name="title_frais_km">Frais kilométriques</string>
+    <string name="title_frais_repas">Frais de repas</string>
+    <string name="title_frais_nuite">Frais de nuitées</string>
+    <string name="title_frais_detape">Frais d\'étapes</string>
+    <string name="title_frais_hf">Frais hors forfait</string>
+    <string name="title_synch">Transfert</string>
+    <string name="title_historique">Frais enregistrés</string>
+    <string name="title_miseajour">Consulter la base de données</string>
+    <string name="motif">Motif :</string>
+    <string name="identifiant">Identifiant</string>
+    <string name="identifiantmiseajour">Identifiant</string>
+    <string name="motdepasse">Mot de Passe</string>
+    <string name="motdepassemiseajour">Mot de Passe</string>
+    <string name="montant">Montant :</string>
+    <string name="icone_frais_km">Icone des frais kilométriques</string>
+    <string name="icone_frais_repas">Icone des frais de repas</string>
+    <string name="icone_frais_nuitee">Icone des frais de nuitée</string>
+    <string name="icone_frais_etape">Icone des frais d\'étape</string>
+    <string name="icone_frais_hf">Icone des frais hors forfait</string>
+    <string name="icone_recap_hf">Icone du récapitulatif des frais hors forfait</string>
+    <string name="icone_transfert">Icone de la commande de transfert</string>
+    <string name="icone_supp_hf">Icone de suppression d\'une ligne de frais</string>
+    <string name="icon_miseajour">Icone pour la mise à jour </string>
+
+</resources>
